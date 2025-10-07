@@ -1,13 +1,20 @@
-//loading animation
-window.addEventListener ("load", () => {
-    setTimeout(() => {
-        document.querySelector(".loader-wrapper").style.opacity = "0";
-        setTimeout(() => {
-            document.querySelector(".loader-wrapper").style.opacity = "none";
-        }, 500);
-    }, 2000);
+// Loading Animation
+window.addEventListener('load', () => {
+  setTimeout(() => {
+      document.querySelector('.loader-wrapper').style.opacity = '0';
+      setTimeout(() => {
+          document.querySelector('.loader-wrapper').style.display = 'none';
+      }, 500);
+  }, 2000);
 });
 
+//document.addEventListener('mousedown', () => {
+//  cursor.style.transform = 'translate(-50%, -50%) scale(0.8)';
+//});
+//
+//document.addEventListener('mouseup', () => {
+//  cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+//});
 
 // Scrolled Header
 window.addEventListener('scroll', () => {
